@@ -19,6 +19,7 @@ public class Empwagecomp {
 				
 				int Workinghours = 8;
 				int WAGEPerHOUR = 20;
+				int PartTime = 8;
 			
 				
 				System.out.println("-->Welcome to Employee Wage Computation<--");
