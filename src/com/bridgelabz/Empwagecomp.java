@@ -21,7 +21,7 @@ public class Empwagecomp {
 				int WAGEPerHOUR = 20;
 				int DailyWage = Workinghours*WAGEPerHOUR;
 				int PartTime = 8;
-				int WORKING_DAYS_PER_MONTH = 20;
+				int WorkingDayPerMonth = 20;
 				
 				System.out.println("-->Welcome to Employee Wage Computation<--");
 				
@@ -36,7 +36,7 @@ public class Empwagecomp {
 				return new Random().nextBoolean();
 					
 								
-				int getEmployeeType;
+			 String getEmployeeType;
 				switch (getEmployeeType) {
 				case "Full-time":
 					System.out.println("Employment: Full-time");
@@ -47,21 +47,7 @@ public class Empwagecomp {
 				default:
 					break;
 				}
-				long getWagesForMonth() {
-					long wages = 0;
 				
-					for (int i = 1; i <= WORKING_DAYS_PER_MONTH; i++) {
-						System.out.println("Day #" + i);
-						
-						if (isEmployeePresent()) {
-							System.out.println("Present");
-							wages += DailyWage;
-						} else {
-							System.out.println("Absent");
-						}
-					}
-					return wages;
-				}	
 					
 					
 			}
