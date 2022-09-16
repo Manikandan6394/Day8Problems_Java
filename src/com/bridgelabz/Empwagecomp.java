@@ -46,7 +46,6 @@ public class Empwagecomp {
 					break;
 				default:
 					break;
-				}
 				
 				long getWagesForMonth() {
 					long wages = 0;
@@ -62,8 +61,14 @@ public class Empwagecomp {
 						}
 					}
 					return wages;
+				}
+			
+				public static String getEmployeeType() {
+					String[] arr = { "Full-time", "Part-time" };
+					return arr[new Random().nextInt(arr.length)];
+				}
+			}
 					
-		
 			}
 		}	
 
