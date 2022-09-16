@@ -11,6 +11,9 @@ import java.util.Random;
  */
 public class Empwagecomp {
 
+	public Empwagecomp(String string, int i, int j, int k) {
+		// TODO Auto-generated constructor stub
+	}
 	/**
 	 * @param args
 	 */
@@ -58,6 +61,7 @@ public class Empwagecomp {
 							wages += DailyWage;
 						} else {
 							System.out.println("Absent");
+							
 						}
 					}
 					return wages;
@@ -66,8 +70,13 @@ public class Empwagecomp {
 				public static String getEmployeeType() {
 					String[] arr = { "Full-time", "Part-time" };
 					return arr[new Random().nextInt(arr.length)];
+					
+					
+	
+					
+					
 				}
-			}
+			}	 
 					
 			}
 		}	
