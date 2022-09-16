@@ -19,8 +19,9 @@ public class Empwagecomp {
 				
 				int Workinghours = 8;
 				int WAGEPerHOUR = 20;
+				int DailyWage = Workinghours*WAGEPerHOUR;
 				int PartTime = 8;
-				 
+				int WORKING_DAYS_PER_MONTH = 20;
 				
 				System.out.println("-->Welcome to Employee Wage Computation<--");
 				
@@ -46,7 +47,21 @@ public class Empwagecomp {
 				default:
 					break;
 				}
-					
+				long getWagesForMonth() {
+					long wages = 0;
+				
+					for (int i = 1; i <= WORKING_DAYS_PER_MONTH; i++) {
+						System.out.println("Day #" + i);
+						
+						if (isEmployeePresent()) {
+							System.out.println("Present");
+							wages += DailyWage;
+						} else {
+							System.out.println("Absent");
+						}
+					}
+					return wages;
+				}	
 					
 					
 			}
