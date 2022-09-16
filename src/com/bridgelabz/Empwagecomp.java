@@ -20,9 +20,10 @@ public class Empwagecomp {
 				int Workinghours = 8;
 				int WAGEPerHOUR = 20;
 				int PartTime = 8;
-			
+				 
 				
 				System.out.println("-->Welcome to Employee Wage Computation<--");
+				
 				
 				if (isEmployeePresent()) {
 					System.out.println("Employee is PRESENT");
@@ -32,6 +33,22 @@ public class Empwagecomp {
 			}
 			public static boolean isEmployeePresent() {
 				return new Random().nextBoolean();
+					
+								
+				int getEmployeeType;
+				switch (getEmployeeType) {
+				case "Full-time":
+					System.out.println("Employment: Full-time");
+					break;
+				case "Part-time":
+					System.out.println("Employment: Part-time");
+					break;
+				default:
+					break;
+				}
+					
+					
+					
 			}
 		}	
 
