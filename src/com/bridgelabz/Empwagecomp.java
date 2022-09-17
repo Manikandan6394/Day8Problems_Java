@@ -20,7 +20,7 @@ public class Empwagecomp {
 		
 			public static void main(String[] args) {
 				
-				int Workinghours = 8;
+			  int Workinghours = 8;
 				int WAGEPerHOUR = 20;
 				int DailyWage = Workinghours*WAGEPerHOUR;
 				int PartTime = 8;
@@ -67,9 +67,10 @@ public class Empwagecomp {
 					return wages;
 				}
 			
-				public static String getEmployeeType() {
+				private static String getEmployeeType() {
 					String[] arr = { "Full-time", "Part-time" };
 					return arr[new Random().nextInt(arr.length)];
+					
 					
 					
 	
